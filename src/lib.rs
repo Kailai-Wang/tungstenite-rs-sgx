@@ -11,6 +11,10 @@
     unused_imports,
     unused_import_braces
 )]
+// ensure we don't import any parts of the std library - we use sgx_tstd instead
+#![no_std]
+
+extern crate sgx_tstd as std;
 
 pub use http;
 

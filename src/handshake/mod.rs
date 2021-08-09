@@ -10,9 +10,10 @@ use std::{
     error::Error as ErrorTrait,
     fmt,
     io::{Read, Write},
+    string::String,
 };
 
-use sha1::{Digest, Sha1};
+use sha1::Sha1;
 
 use self::machine::{HandshakeMachine, RoundResult, StageResult, TryParse};
 use crate::error::Error;
@@ -121,7 +122,7 @@ pub fn derive_accept_key(request_key: &[u8]) -> String {
     let mut sha1 = Sha1::default();
     sha1.update(request_key);
     sha1.update(WS_GUID);
-    base64::encode(&sha1.finalize())
+    base64::encode(&sha1.digest().bytes())
 }
 
 #[cfg(test)]

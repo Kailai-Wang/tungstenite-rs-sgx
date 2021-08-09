@@ -1,5 +1,8 @@
 //! Connection helper.
-use std::io::{Read, Write};
+use std::{
+    io::{Read, Write},
+    string::ToString,
+};
 
 use crate::{
     client::{client_with_config, uri_mode, IntoClientRequest},

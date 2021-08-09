@@ -1,6 +1,9 @@
 use bytes::Buf;
 use log::*;
-use std::io::{Cursor, Read, Write};
+use std::{
+    io::{Cursor, Read, Write},
+    vec::Vec,
+};
 
 use crate::{
     error::{Error, ProtocolError, Result},

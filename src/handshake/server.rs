@@ -4,6 +4,8 @@ use std::{
     io::{self, Read, Write},
     marker::PhantomData,
     result::Result as StdResult,
+    string::String,
+    vec,
 };
 
 use http::{

@@ -4,6 +4,7 @@ use std::{
     io::{Read, Write},
     net::{SocketAddr, TcpStream, ToSocketAddrs},
     result::Result as StdResult,
+    string::{String, ToString},
 };
 
 use http::{request::Parts, Uri};

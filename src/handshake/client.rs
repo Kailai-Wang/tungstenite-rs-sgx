@@ -3,6 +3,8 @@
 use std::{
     io::{Read, Write},
     marker::PhantomData,
+    string::String,
+    vec::Vec,
 };
 
 use http::{HeaderMap, Request as HttpRequest, Response as HttpResponse, StatusCode};

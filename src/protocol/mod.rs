@@ -11,6 +11,7 @@ use std::{
     collections::VecDeque,
     io::{ErrorKind as IoErrorKind, Read, Write},
     mem::replace,
+    vec::Vec,
 };
 
 use self::{

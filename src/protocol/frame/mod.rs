@@ -6,7 +6,10 @@ pub mod coding;
 mod frame;
 mod mask;
 
-use std::io::{Error as IoError, ErrorKind as IoErrorKind, Read, Write};
+use std::{
+    io::{Error as IoError, ErrorKind as IoErrorKind, Read, Write},
+    vec::Vec,
+};
 
 use log::*;
 

@@ -3,6 +3,8 @@ use std::{
     fmt,
     result::Result as StdResult,
     str,
+    string::String,
+    vec::Vec,
 };
 
 use super::frame::CloseFrame;
@@ -10,6 +12,8 @@ use crate::error::{CapacityError, Error, Result};
 
 mod string_collect {
     use utf8::DecodeError;
+
+    use std::string::String;
 
     use crate::error::{Error, Result};
 

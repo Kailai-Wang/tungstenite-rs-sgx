@@ -3,10 +3,11 @@ use log::*;
 use std::{
     borrow::Cow,
     default::Default,
-    fmt,
+    fmt, format,
     io::{Cursor, ErrorKind, Read, Write},
     result::Result as StdResult,
     string::{FromUtf8Error, String},
+    vec::Vec,
 };
 
 use super::{

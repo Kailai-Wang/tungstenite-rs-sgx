@@ -4,7 +4,10 @@
 //! It is filled by reading from a stream supporting `Read` and is then
 //! accessible as a cursor for reading bytes.
 
-use std::io::{Cursor, Read, Result as IoResult};
+use std::{
+    io::{Cursor, Read, Result as IoResult},
+    vec::Vec,
+};
 
 use bytes::Buf;
 

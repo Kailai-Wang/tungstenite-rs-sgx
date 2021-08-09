@@ -1,6 +1,6 @@
 //! Error handling.
 
-use std::{io, result, str, string};
+use std::{io, result, str, string::String};
 
 use crate::protocol::{frame::coding::Data, Message};
 use http::Response;
@@ -75,8 +75,8 @@ impl From<str::Utf8Error> for Error {
     }
 }
 
-impl From<string::FromUtf8Error> for Error {
-    fn from(_: string::FromUtf8Error) -> Self {
+impl From<std::string::FromUtf8Error> for Error {
+    fn from(_: std::string::FromUtf8Error) -> Self {
         Error::Utf8
     }
 }
