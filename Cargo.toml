@@ -32,7 +32,7 @@ byteorder = { git = "https://github.com/mesalock-linux/byteorder-sgx", tag = "sg
 bytes = { git = "https://github.com/integritee-network/bytes-sgx", branch = "sgx-experimental" }
 http = { git = "https://github.com/integritee-network/http-sgx", branch = "sgx-experimental" }
 httparse = { git = "https://github.com/integritee-network/httparse-sgx", branch = "sgx-experimental", features = ["mesalock_sgx"], default-features = false }
-log = { git = "https://github.com/mesalock-linux/log-sgx", tag = "sgx_1.1.3" }
+log = { git = "https://github.com/Kailai-Wang/log-sgx", branch = "sgx-sdk-2.0.0" }
 rand = { package = "sgx_rand", git = "https://github.com/apache/incubator-teaclave-sgx-sdk", branch = "v2.0.0-preview-11-17" }
 sha1 = { git = "https://github.com/mesalock-linux/rust-sha1-sgx", tag = "sgx_1.1.3" }
 thiserror = { git = "https://github.com/mesalock-linux/thiserror-sgx", tag = "sgx_1.1.3" }
